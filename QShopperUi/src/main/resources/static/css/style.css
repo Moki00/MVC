@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #251351;
+	color: #EAC435;
+	border: #040926;
+	border-width: 20px;
+}
+
+a {
+	color:#24bbb3;
+}
+
+a:hover{
+	background-color: #040926;
+	color: yellow;
+	font-size: 101%;
+}
+
+p {
+	font-size: medium;
+	border: #7D2E68;
+}
+
+.link {
+	font-size: x-large;
+}
+
+form {
+	border: #818479;
+}
+
+.button {
+	border-radius: 10px;
+}
+
+.unique{
+	font-size: larger;
+	color: yellow;
+	text-shadow: #040926;
+}

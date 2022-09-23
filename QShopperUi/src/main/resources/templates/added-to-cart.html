@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Confirmation page</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+	<h2>A product has been added:</h2>
+	<div th:object="${product}">
+		<p>
+			id: <span th:text="*{id}"></span>
+		</p>
+		<p>
+			name: <span th:text="*{name}"></span>
+		</p>
+		<p>
+			price: <span th:text="*{price}"></span>
+		</p>
+	</div>
+
+	<a th:href="@{/addMoreProducts(id = ${product.id})}" id="link">--
+		Add more products --</a>
+	<hr>
+	<a th:href="@{/checkout}">Checkout</a>
+	<a th:href="@{/}">Return to Home</a>
+</body>
+</html>

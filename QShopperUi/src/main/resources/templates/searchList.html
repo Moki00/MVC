@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Search List</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+	<a th:href="@{/home}">Return Home</a>
+	<h2>Search List</h2>
+	<div th:each="product:${products}">
+		<span th:text="${product.name}" />,
+		<span th:text="${ product.price}" />
+		<hr />
+	</div>
+</body>
+</html>
